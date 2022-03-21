@@ -1,0 +1,35 @@
+.Todo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #F7CCAC;
+  height: 100vh;
+
+  &__header {
+    margin-left: 50%;
+
+    @media (max-width: 640px) {
+    margin-left: 10%;
+    }
+
+    &-title {
+      color: #3A3845;
+      margin-left: 12px;
+    }
+
+    &-text {
+      margin-top: 5px;
+      margin-left: 12px;
+      overflow: hidden;
+      color: #3A3845;
+
+      &::after {
+        content: '';
+        display: block;
+        border-bottom: 2px solid #3A3845;
+        width: 100vw;
+        margin-top: 20px;
+      }
+    }
+  }
+}
